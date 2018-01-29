@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{9125C3E0-0E03-4BA8-99E9-8F314E42D7B9}"
+	ProjectSection(SolutionItems) = preProject
+		packages.config = packages.config
+	EndProjectSection
+EndProject
+Project("{FF286327-C783-4F7A-AB73-9BCBAD0D4460}") = "Nuget.Windows.Networking.Sockets", "Nuget.Windows.Networking.Sockets\Nuget.Windows.Networking.Sockets.nuproj", "{DE8AA15D-B13F-4E10-81BA-A924C6D3FB7D}"
+EndProject
+Project("{FF286327-C783-4F7A-AB73-9BCBAD0D4460}") = "Nuget.Windows.Networking.Sockets.DELIVERABLES", "Nuget.Windows.Networking.Sockets.DELIVERABLES\Nuget.Windows.Networking.Sockets.DELIVERABLES.nuproj", "{F3909CBC-AF69-4DA0-816C-D40E5A12D3AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE8AA15D-B13F-4E10-81BA-A924C6D3FB7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE8AA15D-B13F-4E10-81BA-A924C6D3FB7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE8AA15D-B13F-4E10-81BA-A924C6D3FB7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE8AA15D-B13F-4E10-81BA-A924C6D3FB7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3909CBC-AF69-4DA0-816C-D40E5A12D3AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3909CBC-AF69-4DA0-816C-D40E5A12D3AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3909CBC-AF69-4DA0-816C-D40E5A12D3AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3909CBC-AF69-4DA0-816C-D40E5A12D3AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C780C58-E839-454C-8674-BFB3C8D076EF}
+	EndGlobalSection
+EndGlobal

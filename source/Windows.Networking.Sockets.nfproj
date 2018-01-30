@@ -47,12 +47,31 @@
       <Private>True</Private>
       <SpecificVersion>True</SpecificVersion>
     </Reference>
+    <Reference Include="Windows.Storage.Streams, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>packages\nanoFramework.Windows.Storage.Streams.1.0.0-preview181\lib\Windows.Storage.Streams.dll</HintPath>
+      <Private>True</Private>
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="README.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Windows.Networking.Sockets\IStreamSocket.cs" />
+    <Compile Include="Windows.Networking.Sockets\IStreamSocketInformatiom.cs" />
+    <Compile Include="Windows.Networking.Sockets\SocketProtectionLevel.cs" />
+    <Compile Include="Windows.Networking.Sockets\SocketQualityOfService.cs" />
+    <Compile Include="Windows.Networking.Sockets\SocketsNative.cs" />
+    <Compile Include="Windows.Networking.Sockets\StreamSocket.cs" />
+    <Compile Include="Windows.Networking.Sockets\StreamSocketControl.cs" />
+    <Compile Include="Windows.Networking.Sockets\StreamSocketInformation.cs" />
+    <Compile Include="Windows.Networking\EndpointPair.cs" />
+    <Compile Include="Windows.Networking\HostName.cs" />
+    <Compile Include="Windows.Networking\HostNameType.cs" />
+    <Compile Include="Windows.Networking\IEndpointPair.cs" />
   </ItemGroup>
   <Import Project="$(NanoFrameworkProjectSystemPath)NFProjectSystem.CSharp.targets" Condition="Exists('$(NanoFrameworkProjectSystemPath)NFProjectSystem.CSharp.targets')" />
   <ProjectExtensions>

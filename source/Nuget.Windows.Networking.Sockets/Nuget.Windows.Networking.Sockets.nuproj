@@ -34,6 +34,9 @@
     <Dependency Include="nanoFramework.CoreLibrary">
       <Version>[1.0.0-preview043]</Version>
     </Dependency>
+    <Dependency Include="nanoFramework.Windows.Storage.Streams">
+      <Version>[1.0.0-preview182]</Version>
+    </Dependency>    
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>DE8AA15D-B13F-4E10-81BA-A924C6D3FB7D</ProjectGuid>

@@ -63,6 +63,23 @@
     <Content Include="README.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Windows.Networking.Connectivity\IIPInformation.cs" />
+    <Compile Include="Windows.Networking.Connectivity\INetworkAdapter.cs" />
+    <Compile Include="Windows.Networking.Connectivity\INetworkItem.cs" />
+    <Compile Include="Windows.Networking.Connectivity\IPInformation.cs" />
+    <Compile Include="Windows.Networking.Connectivity\NetworkAdapter.cs" />
+    <Compile Include="Windows.Networking.Connectivity\NetworkItem.cs" />
+    <Compile Include="Windows.Networking.Connectivity\NetworkTypes.cs" />
+    <Compile Include="Windows.Networking.Sockets\DatagramSocket.cs" />
+    <Compile Include="Windows.Networking.Sockets\DatagramSocketControl.cs" />
+    <Compile Include="Windows.Networking.Sockets\DatagramSocketInformation.cs" />
+    <Compile Include="Windows.Networking.Sockets\DatagramSocketMessageReceivedEventArgs.cs" />
+    <Compile Include="Windows.Networking.Sockets\IDatagramSocket.cs" />
+    <Compile Include="Windows.Networking.Sockets\IDatagramSocketControl.cs" />
+    <Compile Include="Windows.Networking.Sockets\IDatagramSocketControl2.cs" />
+    <Compile Include="Windows.Networking.Sockets\IDatagramSocketControl3.cs" />
+    <Compile Include="Windows.Networking.Sockets\IDatagramSocketInformation.cs" />
+    <Compile Include="Windows.Networking.Sockets\IDatagramSocketMessageReceivedEventArgs.cs" />
     <Compile Include="Windows.Networking.Sockets\IStreamSocket.cs" />
     <Compile Include="Windows.Networking.Sockets\IStreamSocketInformatiom.cs" />
     <Compile Include="Windows.Networking.Sockets\SocketProtectionLevel.cs" />

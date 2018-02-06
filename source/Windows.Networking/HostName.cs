@@ -4,6 +4,7 @@
 //
 
 using System;
+using Windows.Networking.Connectivity;
 
 namespace Windows.Networking
 {
@@ -12,10 +13,10 @@ namespace Windows.Networking
     /// </summary>
     public class HostName
     {
-        private string canonicalName;
-        private string displayName;
-        private string rawName;
-        private HostNameType hostNameType;
+        private string _canonicalName;
+        private string _displayName;
+        private string _rawName;
+        private HostNameType _hostNameType;
 
         /// <summary>
         /// Creates a new HostName object from a string that contains a hostname or an IP address.
@@ -33,13 +34,13 @@ namespace Windows.Networking
         /// <param name="hostName"></param>
         public HostName(String hostName)
         {
-            rawName = hostName ?? throw new ArgumentNullException("hostName"); ;
-            canonicalName = displayName = RawName;
+            _rawName = hostName ?? throw new ArgumentNullException("hostName"); ;
+            _canonicalName = _displayName = RawName;
 
             if (hostName[0] >= '0' && hostName[0] <= '9')
-                hostNameType = HostNameType.Ipv4;
+                _hostNameType = HostNameType.Ipv4;
             else
-                hostNameType = HostNameType.DomainName;
+                _hostNameType = HostNameType.DomainName;
         }
 
         #region Properties
@@ -47,35 +48,30 @@ namespace Windows.Networking
         /// <summary>
         /// Gets the canonical name for the HostName object.
         /// </summary>
-        public string CanonicalName
-        {
-            get { return canonicalName; }
-        }
+        public string CanonicalName => _canonicalName;
 
         /// <summary>
         /// Gets the display name for the HostName object.
         /// </summary>
-        public string DisplayName
-        {
-            get { return displayName; }
-        }
+        public string DisplayName => _displayName;
+
+        /// <summary>
+        /// Gets the IPInformation object for a local IP address assigned to a HostName object.
+        /// </summary>
+        /// <value>
+        /// The IPInformation object for the IP address.
+        /// </value>
+        public IPInformation IPInformation { get; }
 
         /// <summary>
         /// Gets the original string used to construct the HostName object.
         /// </summary>
-        public string RawName
-        {
-            get { return rawName; }
-        }
-
+        public string RawName => _rawName;
 
         /// <summary>
         /// Gets the HostNameType of the HostName object.
         /// </summary>
-        public HostNameType Type
-        {
-            get { return hostNameType; }
-        }
+        public HostNameType Type => _hostNameType;
 
         #endregion
 
